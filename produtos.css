@@ -3,18 +3,6 @@ header {
   padding: 20px 0;
 }
 
-.caixa {
-  width: 940px;
-  position: relative;
-  margin: 0 auto;
-}
-
-nav {
-  position: absolute;
-  top: 110px;
-  right: 0;
-}
-
 nav li {
   display: inline;
   margin: 0 0 0 15px;
@@ -27,3 +15,23 @@ nav a {
   text-decoration: none;
   font-size: 22px;
 }
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50%;
+}
+
+.produtos li{
+  display: inline-block;
+  background-color: #CCCCCC;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
