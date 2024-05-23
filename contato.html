@@ -27,15 +27,59 @@
 
   <main>
     <form>
-      <label for="nomeSobrenome">Nome e Sobrenome</label>
-      <input type="text" id="nomeSobrenome">
-      <label for="email">Email </label>
-      <input type="text" id=email>
-      <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
+      <label for="nomesobrenome">
+        NOME E SOBRENOME:
+      </label>
+      <input class="input-padrao" type="text" id="nomesobrenome" required placeholder="Nome E Sobrenome">
 
+      <label for="email">
+        E-MAIL:
+      </label>
+      <input class="input-padrao" type="email" id="email" required placeholder="Insira seu @gmail.com">
+
+      <label for="telefone">
+        TELEFONE:
+      </label>
+      <input class="input-padrao" type="tel" id="telefone" required placeholder="insira seu número com DDD">
+
+      <label for="mensagem">
+        Mensagem
+      </label>
+      <textarea class="input-padrao" cols="100" rows="10" id="mensagem" required placeholder="Como podemos te ajudar?">
+      </textarea>
+      <fildset>
+        <legend>
+          como prefere nosso contato?
+        </legend>
+        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">email</label>
+
+
+        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">telefone
+        </label>
+
+
+        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+            checked>Whatsapp</label>
+
+      </fildset>
+
+      <fildset>
+        <legend>
+          Qual horário prefere ser atendido?
+        </legend>
+
+        <select>
+          <option>manhã</option>
+          <option>tarde</option>
+          <option>noite</option>
+        </select>
+      </fildset>
+
+    <label><input type="checkbox" checked>gostaria de receber nossas ofertas por e-Mail?</label>
+
+
+      <input type="submit" value="ENVIAR O FORMULÁRIO" class="enviar">
       
-      <input type="submit" value="enviar o formulário" class="enviar">
     </form>
   </main>
 
